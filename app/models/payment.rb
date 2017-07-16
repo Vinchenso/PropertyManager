@@ -20,4 +20,6 @@
 
 class Payment < ApplicationRecord
   belongs_to :tenant
+  validates :amount, numericality: true
+  validates :date, :amount, :tenant_id, presence: true
 end

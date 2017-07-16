@@ -24,4 +24,9 @@ class Tenant < ApplicationRecord
   belongs_to :agent
   belongs_to :property
   has_many :payments
+
+
+  validates :agent, presence: true
+  validates :property , presence: true
+  validates :name, presence: true
 end

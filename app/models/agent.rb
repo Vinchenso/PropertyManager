@@ -10,4 +10,5 @@
 
 class Agent < ApplicationRecord
   has_many :tenants
+  validates :name, presence: true
 end

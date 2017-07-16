@@ -10,4 +10,6 @@
 
 class Property < ApplicationRecord
   has_one :tenant
+
+validates :name, presence: true
 end
