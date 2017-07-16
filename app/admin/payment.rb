@@ -14,4 +14,5 @@ ActiveAdmin.register Payment do
 
   config.create_another = true
 
+  scope :this_month, -> { where(date: DateTime.now.beginning_of_month..DateTime.now.end_of_month) }
 end
