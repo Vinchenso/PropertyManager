@@ -11,6 +11,7 @@
 class Property < ApplicationRecord
   has_one :tenant
   has_many :payments, through: :tenant
+  has_one :agent, through: :tenant
 
 validates :name, presence: true
 end
