@@ -16,7 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'semantic-ui-sass'
 gem 'devise'
-gem 'activeadmin'
+gem 'activeadmin' 
 gem 'active_skin'
 
 
@@ -33,6 +33,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'foreman'
   gem "letter_opener"
+  gem 'annotate'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

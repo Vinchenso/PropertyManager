@@ -3,4 +3,30 @@
 
 $skinLogo: none;
 
+.actions {
+  float: none;
+
+  .create_another {
+    float: left;
+  }
+
+  label {
+    width: 205px;
+    padding-left: 38px;
+  }
+
+  .input_action {
+    float: right;
+  }
+
+  .cancel {
+    float: right;
+  }
+}
+
+#create_another.create_another {
+  margin-top: 7px;
+  margin-left: 8px;
+}
+
 @import "active_skin";
