@@ -1,3 +1,37 @@
 engines:
   rubocop:
     enabled: true
+  brakeman:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+  eslint:
+    enabled: true
+    
+  ratings:
+    paths:
+    - "**.erb"
+    - "**.rb"
+    - "**.js"
+    
+  exclude_paths:
+- config/
+- db/
+- features/
+- node_modules/
+- spec/
+- vendor/
+- .yarn-cache/
+- tmp/
+- builds/
+- coverage/
+- public/
+- shared/
+- webpack-report/
+- log/
