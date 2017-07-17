@@ -16,13 +16,13 @@ engines:
   reek:
     enabled: true
     
-  ratings:
-    paths:
-    - "**.erb"
-    - "**.rb"
-    - "**.js"
-    
-  exclude_paths:
+ratings:
+  paths:
+  - "**.erb"
+  - "**.rb"
+  - "**.js"
+
+exclude_paths:
 - config/
 - db/
 - features/
