@@ -27,8 +27,6 @@ exclude_paths:
 - node_modules/**/*
 - spec/**/*
 - vendor/**/*
-- .yarn-cache/
 - tmp/**/*
 - builds/**/*
 - public/**/*
-- shared/**/*
