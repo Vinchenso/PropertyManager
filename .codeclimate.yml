@@ -14,26 +14,20 @@ engines:
   eslint:
     enabled: true
   reek:
-    enabled: true
-    
+    enabled: true   
 ratings:
   paths:
   - "**.erb"
   - "**.rb"
   - "**.js"
-
 exclude_paths:
-- config/
-- db/
-- features/
-- node_modules/
-- spec/
-- vendor/
+- config/**/*
+- db/**/*
+- node_modules/**/*
+- spec/**/*
+- vendor/**/*
 - .yarn-cache/
-- tmp/
-- builds/
-- coverage/
-- public/
-- shared/
-- webpack-report/
-- log/
+- tmp/**/*
+- builds/**/*
+- public/**/*
+- shared/**/*
