@@ -1,0 +1,11 @@
+language: ruby
+sudo: true
+rvm:
+  - 2.4.0
+script:
+  - bin/rake db:migrate RAILS_ENV=test
+  - bin/rake
+  - bundle exec rspec
+addons:
+  postgresql: "9.6"
+  
