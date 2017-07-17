@@ -13,6 +13,10 @@ engines:
       - javascript
   eslint:
     enabled: true
+  reek:
+    enabled: true
+  brakeman:
+    enabled: true
     
   ratings:
     paths:
