@@ -1,7 +1,22 @@
 ---
 engines: 
+  brakeman: 
+    enabled: true
+  bundler-audit: 
+    enabled: true
+  duplication: 
+    config: 
+      languages: 
+        - ruby
+        - javascript
+    enabled: true
+  eslint: 
+    enabled: true
+  reek: 
+    enabled: true
   rubocop: 
     enabled: true
+
 
 ratings: 
   paths: 
