@@ -1,27 +1,39 @@
 engines:
   rubocop:
     enabled: true
-    #checks:
-    #  Rubocop/Metrics/ClassLength:
-    #    enabled: false
   brakeman:
     enabled: true
-  eslint:
-    enabled: true
-  csslint:
+  bundler-audit:
     enabled: true
   duplication:
     enabled: true
     config:
       languages:
-      - ruby:
-      - javascript:
-ratings:
-  paths:
-  - app/**
-  - lib/**
-  - "**.rb"
-  - "**.go"
-exclude_paths:
-- spec/**/*
-- "**/vendor/**/*"
+      - ruby
+      - javascript
+  eslint:
+    enabled: true
+  reek:
+    enabled: true
+  brakeman:
+    enabled: true
+  ratings:
+    paths:
+    - "**.erb"
+    - "**.rb"
+    - "**.js"
+  exclude_paths:
+- config/
+- db/
+- features/
+- node_modules/
+- spec/
+- vendor/
+- .yarn-cache/
+- tmp/
+- builds/
+- coverage/
+- public/
+- shared/
+- webpack-report/
+- log/
