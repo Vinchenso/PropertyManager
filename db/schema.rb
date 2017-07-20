@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170720183206) do
+ActiveRecord::Schema.define(version: 20170720220917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,8 +66,8 @@ ActiveRecord::Schema.define(version: 20170720183206) do
   create_table "bank_accounts", force: :cascade do |t|
     t.string "name"
     t.string "institution"
-    t.string "type"
-    t.string "class"
+    t.string "account_type"
+    t.string "account_klass"
     t.integer "zapier_index"
     t.string "account_number"
     t.datetime "created_at", null: false

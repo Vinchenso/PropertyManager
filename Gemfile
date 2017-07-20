@@ -34,6 +34,7 @@ group :development do
   gem 'foreman'
   gem "letter_opener"
   gem 'annotate'
+  gem 'pry-rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

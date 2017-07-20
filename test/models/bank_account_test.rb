@@ -5,8 +5,8 @@
 #  id             :integer          not null, primary key
 #  name           :string
 #  institution    :string
-#  type           :string
-#  class          :string
+#  account_type   :string
+#  account_klass  :string
 #  zapier_index   :integer
 #  account_number :string
 #  created_at     :datetime         not null
