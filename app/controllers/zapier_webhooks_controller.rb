@@ -3,7 +3,7 @@ class ZapierWebhooksController < ApplicationController
   skip_before_action :verify_authenticity_token 
 
   def recieve
-    
+      
   end
 
   def check_auth
