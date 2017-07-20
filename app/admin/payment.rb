@@ -1,6 +1,7 @@
 ActiveAdmin.register Payment do
   permit_params :date, :amount, :tenant_id
 
+  menu priority: 2
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
