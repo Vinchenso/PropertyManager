@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'zapier_webhooks/recieve'
+  post 'zapier_webhooks/recieve'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users

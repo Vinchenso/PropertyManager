@@ -1,7 +1,9 @@
 class ZapierWebhooksController < ApplicationController
-  before_filter :check_auth
- 
+  before_action :check_auth
+  skip_before_action :verify_authenticity_token 
+
   def recieve
+    
   end
 
   def check_auth
