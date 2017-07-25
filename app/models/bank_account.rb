@@ -14,4 +14,5 @@
 #
 
 class BankAccount < ApplicationRecord
+has_many :account_balances
 end
