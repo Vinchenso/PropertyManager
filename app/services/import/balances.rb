@@ -8,10 +8,13 @@ module Import
       @spreadsheet_title = spreadsheet_title
       @worksheet_title = worksheet_title
       @num_of_rows = num_of_rows
+      @data
 
       session = connect_to_data_source
-      data = get_data(session)
+      import_data(session)
     end
+
+    attr_reader :data
 
     private
 
@@ -19,10 +22,10 @@ module Import
       GoogleDrive::Session.from_service_account_key(@auth_file)
     end
 
-    def get_data(session)
+    def import_data(session)
       spreadsheet = session.file_by_title @spreadsheet_title
       ws = spreadsheet.worksheet_by_title @worksheet_title
-      data = ws.list.take @num_of_rows
+      @data = ws.list.take(@num_of_rows)
     end
   end
 end
