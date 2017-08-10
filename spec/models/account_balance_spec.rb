@@ -22,5 +22,7 @@
 require 'rails_helper'
 
 RSpec.describe AccountBalance, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'dumy' do
+    expect(true).to eq true
+  end
 end

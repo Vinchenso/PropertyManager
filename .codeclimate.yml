@@ -21,7 +21,7 @@ engines:
 ratings: 
   paths: 
     - "**.rb"
-
+    - "**.js
 exclude_paths: 
   - spec/
   - db/

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require_relative '../../../app/services/import/balances'
-require 'pry'
+#require 'pry'
 require 'json'
 
 namespace :import do
