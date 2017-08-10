@@ -11,6 +11,10 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# Ignore coverage reports
+/coverage/*
+/Gemfile.lock
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -27,7 +31,3 @@ app/services/import/config.json
 # Ignore encrypted secrets key file.
 config/secrets.yml.key
 
-# Ignore coverage reports
-/coverage/
-/tmp/
-/Gemfile.lock
