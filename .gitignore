@@ -28,7 +28,6 @@ app/services/import/config.json
 config/secrets.yml.key
 
 # Ignore coverage reports
-/coverage
-/coverage/*
-coverage/*
-
+/coverage/
+/tmp/
+/Gemfile.lock
