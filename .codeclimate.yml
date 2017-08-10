@@ -17,11 +17,11 @@ engines:
   rubocop: 
     enabled: true
 
-
 ratings: 
   paths: 
     - "**.rb"
-    - "**.js
+    - "**.js"
+    
 exclude_paths: 
   - spec/
   - db/
