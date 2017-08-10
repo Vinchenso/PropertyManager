@@ -29,4 +29,4 @@ config/secrets.yml.key
 
 # Ignore coverage reports
 /coverage/*
-/coverage/
+/coverage

@@ -25,4 +25,9 @@ RSpec.describe AccountBalance, type: :model do
   it 'dumy' do
     expect(true).to eq true
   end
+
+  it 'dumy' do
+    expect(true).to eq true
+  end
+
 end
