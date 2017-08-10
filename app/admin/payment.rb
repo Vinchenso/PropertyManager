@@ -1,6 +1,7 @@
 ActiveAdmin.register Payment do
   permit_params :date, :amount, :tenant_id
 
+  menu priority: 2
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
@@ -14,4 +15,5 @@ ActiveAdmin.register Payment do
 
   config.create_another = true
 
+  scope :this_month, -> { where(date: DateTime.now.beginning_of_month..DateTime.now.end_of_month) }
 end

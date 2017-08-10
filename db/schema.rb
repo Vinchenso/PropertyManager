@@ -11,11 +11,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20170725111302) do
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "account_balances", force: :cascade do |t|
+
     t.time "uploadedTime"
     t.date "uploadedDate"
     t.decimal "amount"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20170725111302) do
     t.string "institution"
     t.string "account_type"
     t.string "account_klass"
+
     t.string "account_number"
     t.integer "spreadsheet_index"
     t.datetime "created_at", null: false

@@ -22,4 +22,7 @@ class Payment < ApplicationRecord
   belongs_to :tenant
   validates :amount, numericality: true
   validates :date, :amount, :tenant_id, presence: true
+
+  scope :this_month, -> { where(date: DateTime.now.beginning_of_month..DateTime.now.end_of_month) }
+
 end
