@@ -1,0 +1,8 @@
+ruby:
+  enabled: true
+scss:
+  enables: true
+eslint:
+  enabled: true
+haml:
+  enabled: true
