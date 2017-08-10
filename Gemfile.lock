@@ -77,6 +77,10 @@ GEM
       xpath (~> 2.0)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
+    codecov (0.1.10)
+      json
+      simplecov
+      url
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -92,6 +96,7 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.3)
+    docile (1.1.5)
     erubi (1.6.1)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -120,6 +125,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
+    json (2.1.0)
     kaminari (1.0.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.0.1)
@@ -234,6 +240,11 @@ GEM
       rubyzip (~> 1.0)
     semantic-ui-sass (2.2.11.0)
       sass (>= 3.2)
+    simplecov (0.14.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.1)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -256,6 +267,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    url (0.3.2)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.5.1)
@@ -282,6 +294,7 @@ DEPENDENCIES
   annotate
   byebug
   capybara (~> 2.13)
+  codecov
   devise
   foreman
   jbuilder (~> 2.5)
@@ -301,6 +314,9 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
   webpacker
+
+RUBY VERSION
+   ruby 2.4.0p0
 
 BUNDLED WITH
    1.15.1

@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170716103904) do
+ActiveRecord::Schema.define(version: 20170720220917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "account_balances", force: :cascade do |t|
+    t.integer "spreadsheetRow"
+    t.time "uploadedTime"
+    t.date "uploadedDate"
+    t.integer "amount"
+    t.bigint "bank_account_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bank_account_id"], name: "index_account_balances_on_bank_account_id"
+  end
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -48,6 +59,17 @@ ActiveRecord::Schema.define(version: 20170716103904) do
 
   create_table "agents", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bank_accounts", force: :cascade do |t|
+    t.string "name"
+    t.string "institution"
+    t.string "account_type"
+    t.string "account_klass"
+    t.integer "zapier_index"
+    t.string "account_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -94,6 +116,7 @@ ActiveRecord::Schema.define(version: 20170716103904) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "account_balances", "bank_accounts"
   add_foreign_key "payments", "tenants"
   add_foreign_key "tenants", "agents"
   add_foreign_key "tenants", "properties"
